@@ -1,8 +1,9 @@
-import Reader  from './CsvFileReader';
+import { CsvFileReader }  from './CsvFileReader';
 import { MatchResult } from './MatchResult';
+import { MatchReader } from './MatchReader';
 
 // Parse football.csv to 2d array
-const reader = new Reader('football.csv');
+const reader = new MatchReader('football.csv');
 reader.read();
 
 // Instantiate variable for Man United win analysis
