@@ -4,10 +4,7 @@ import { OutputTarget } from '../Summary';
 export class HtmlReport implements OutputTarget {
 
   print(report: string): void {
-    const html = `
-      <h1>Analysis Output</h1>
-      <div>${report}</div>
-    `;
+    const html = `<h1>Analysis Output</h1>\n<div>${report}</div>`;
     fs.writeFileSync('report.html', html);
   }
 }
